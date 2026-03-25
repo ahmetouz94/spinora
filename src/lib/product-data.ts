@@ -15,25 +15,25 @@ export const PRODUCT: Product = {
   },
   images: [
     {
-      src: "/images/product/hero.webp",
+      src: "/images/product/hero.jpg",
       alt: "Spinora Gyroscope Fidget Toy set of 4 — orange, blue, green, pink",
       width: 800,
       height: 800,
     },
     {
-      src: "/images/product/angle-1.webp",
+      src: "/images/product/angle-1.jpg",
       alt: "Spinora gyroscope spinning on fingertip",
       width: 800,
       height: 800,
     },
     {
-      src: "/images/product/angle-2.webp",
+      src: "/images/product/angle-2.jpg",
       alt: "Spinora gyroscope steel bearing close-up",
       width: 800,
       height: 800,
     },
     {
-      src: "/images/product/angle-3.webp",
+      src: "/images/product/angle-3.jpg",
       alt: "Spinora gyroscope set of 4 in gift box",
       width: 800,
       height: 800,

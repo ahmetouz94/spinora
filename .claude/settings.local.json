@@ -11,7 +11,13 @@
       "Bash(git branch:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(curl -L -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://img.kwcdn.com/product/fancy/7f0b8a14-d190-4a8e-9d8b-505b4aa80368.jpg\" -o \"/c/Users/axmet/Desktop/spinora/public/images/product/hero.jpg\" -w \"HTTP %{http_code} — %{size_download} bytes\\\\n\")",
+      "Read(//c/Users/axmet/Desktop/spinora/public/images/product/**)",
+      "Bash(cp hero.jpg angle-1.jpg)",
+      "Bash(cp hero.jpg angle-2.jpg)",
+      "Bash(cp hero.jpg angle-3.jpg)",
+      "Bash(cp hero.jpg lifestyle.jpg)"
     ]
   }
 }

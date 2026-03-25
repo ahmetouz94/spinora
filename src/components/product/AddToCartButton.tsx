@@ -1,25 +1,48 @@
 "use client";
 
-import { ShoppingCart } from "lucide-react";
+import { useState } from "react";
+import { ShoppingCart, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 interface AddToCartButtonProps {
   disabled?: boolean;
-  onClick?: () => void;
+  variantId?: string;
 }
 
-export function AddToCartButton({ disabled, onClick }: AddToCartButtonProps) {
+export function AddToCartButton({ disabled, variantId }: AddToCartButtonProps) {
+  const [loading, setLoading] = useState(false);
+
+  async function handleClick() {
+    if (loading || disabled) return;
+    setLoading(true);
+    try {
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ variantId }),
+      });
+      const data = await res.json();
+      if (data.url) window.location.href = data.url;
+    } catch {
+      setLoading(false);
+    }
+  }
+
   return (
     <Button
       variant="primary"
       size="lg"
       fullWidth
-      disabled={disabled}
-      onClick={onClick}
+      disabled={disabled || loading}
+      onClick={handleClick}
       className="text-lg font-bold tracking-wide"
     >
-      <ShoppingCart className="h-5 w-5" />
-      Buy Now
+      {loading ? (
+        <Loader2 className="h-5 w-5 animate-spin" />
+      ) : (
+        <ShoppingCart className="h-5 w-5" />
+      )}
+      {loading ? "Redirecting..." : "Buy Now"}
     </Button>
   );
 }

@@ -89,7 +89,7 @@ export function ProductCard() {
           onChange={setSelectedVariant}
         />
 
-        <AddToCartButton disabled={!PRODUCT.inStock} />
+        <AddToCartButton disabled={!PRODUCT.inStock} variantId={selectedVariant} />
 
         <div className="flex flex-col gap-2 rounded-xl border border-slate-100 bg-slate-50 p-4 text-sm text-slate-600">
           <div className="flex items-center gap-2">
