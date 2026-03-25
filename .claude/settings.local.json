@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Read(//c/c/Users/axmet/Desktop/**)",
-      "Bash(npx create-next-app@latest spinora --typescript --tailwind --app --src-dir --import-alias \"@/*\" --no-turbopack --yes)"
+      "Bash(npx create-next-app@latest spinora --typescript --tailwind --app --src-dir --import-alias \"@/*\" --no-turbopack --yes)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)",
+      "Bash(vercel --version)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

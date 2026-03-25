@@ -1,0 +1,58 @@
+import type { Review } from "@/types/product";
+
+export const REVIEWS: Review[] = [
+  {
+    id: "r1",
+    author: "James M.",
+    rating: 5,
+    date: "2025-03-10",
+    title: "Way beyond my expectations!",
+    body: "Bought it as a gift and both my kid and I got totally hooked. The packaging is premium and the colors are vivid. Highly recommend!",
+    verified: true,
+  },
+  {
+    id: "r2",
+    author: "Sarah L.",
+    rating: 5,
+    date: "2025-02-28",
+    title: "Perfect for office stress relief",
+    body: "I hold it during meetings and it genuinely relaxes me. Silent — nobody even notices. Been using it for 3 weeks and the bearing still spins like butter.",
+    verified: true,
+  },
+  {
+    id: "r3",
+    author: "Marco D.",
+    rating: 5,
+    date: "2025-02-15",
+    title: "Solid build quality",
+    body: "Box arrived a little dented but the toys inside were perfect. Great packaging overall. The gyroscopes spin incredibly smoothly.",
+    verified: true,
+  },
+  {
+    id: "r4",
+    author: "Emma R.",
+    rating: 4,
+    date: "2025-01-20",
+    title: "Great product, not for young kids",
+    body: "The product itself is excellent but keep in mind it's not suitable for under 12s. Perfect for adults as a stress reliever.",
+    verified: true,
+  },
+  {
+    id: "r5",
+    author: "Tom B.",
+    rating: 5,
+    date: "2025-01-05",
+    title: "Bought as a Father's Day gift",
+    body: "My dad absolutely loved it. His eyes lit up when he started spinning it. Still on his desk every day. Thank you!",
+    verified: true,
+  },
+  {
+    id: "r6",
+    author: "Olivia K.",
+    rating: 5,
+    date: "2024-12-18",
+    title: "Great for ADHD",
+    body: "My therapist recommended a fidget tool and this is by far the best one I've tried. Genuinely helps me focus. Bought one for my son too.",
+    verified: true,
+  },
+];
