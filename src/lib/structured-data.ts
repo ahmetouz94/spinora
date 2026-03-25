@@ -27,7 +27,7 @@ export function getProductSchema() {
       itemCondition: "https://schema.org/NewCondition",
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
-        applicableCountry: "TR",
+        applicableCountry: "GR",
         returnPolicyCategory:
           "https://schema.org/MerchantReturnFiniteReturnWindow",
         merchantReturnDays: 14,
@@ -39,7 +39,7 @@ export function getProductSchema() {
         shippingRate: {
           "@type": "MonetaryAmount",
           value: "0",
-          currency: "TRY",
+          currency: "EUR",
         },
         deliveryTime: {
           "@type": "ShippingDeliveryTime",
@@ -51,14 +51,14 @@ export function getProductSchema() {
           },
           transitTime: {
             "@type": "QuantitativeValue",
-            minValue: 2,
-            maxValue: 4,
+            minValue: 5,
+            maxValue: 10,
             unitCode: "DAY",
           },
         },
         shippingDestination: {
           "@type": "DefinedRegion",
-          addressCountry: "TR",
+          worldRegion: "WEOBU",
         },
       },
     },
@@ -98,7 +98,7 @@ export function getOrganizationSchema() {
       "@type": "ContactPoint",
       telephone: SITE.phone,
       contactType: "customer service",
-      availableLanguage: "Turkish",
+      availableLanguage: "English",
     },
     sameAs: [SITE.socialLinks.instagram, SITE.socialLinks.tiktok],
   };

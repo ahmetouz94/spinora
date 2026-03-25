@@ -17,7 +17,8 @@
       "Bash(cp hero.jpg angle-1.jpg)",
       "Bash(cp hero.jpg angle-2.jpg)",
       "Bash(cp hero.jpg angle-3.jpg)",
-      "Bash(cp hero.jpg lifestyle.jpg)"
+      "Bash(cp hero.jpg lifestyle.jpg)",
+      "WebFetch(domain:spinora-qx66.vercel.app)"
     ]
   }
 }
