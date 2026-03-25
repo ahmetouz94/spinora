@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/c/Users/axmet/Desktop/**)",
+      "Bash(npx create-next-app@latest spinora --typescript --tailwind --app --src-dir --import-alias \"@/*\" --no-turbopack --yes)"
+    ]
+  }
+}
