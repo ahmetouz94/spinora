@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
+import { Analytics } from "@vercel/analytics/next";
 import { SITE, GOOGLE_SITE_VERIFICATION } from "@/lib/constants";
 import { PRODUCT } from "@/lib/product-data";
 
@@ -74,6 +75,7 @@ export default function RootLayout({
         {children}
         <WhatsAppButton />
         <GoogleAnalytics />
+        <Analytics />
       </body>
     </html>
   );
